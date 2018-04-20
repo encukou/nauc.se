@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Titillium+Web:700i');
+
+html {
+    overflow: hidden;
+    margin: 0;
+}
+body {
+    overflow: hidden;
+    font-family: "Oxygen", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(167deg, #3fb0ac 0, #3fb0ac 50%, white 50%, white 100%);
+    background: linear-gradient(167deg, #3fb0ac 0, #3fb0ac calc(50% - 1px), white 50%, white 100%);
+    height: 100%;
+}
+h1 span {
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: "Titillium Web", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-variant: italic;
+    font-size: 7vw;
+    font-size: calc(min(7vw, 7hw));
+    transform: rotate(-13deg);
+    transform-origin: bottom center;
+    color: white;
+}
+h1 span + span{
+    display: block;
+    position: absolute;
+    bottom: auto;
+    top: 50%;
+    color: #3fb0ac;
+    transform-origin: top center;
+}
+@media (min-aspect-ratio: 2/1) {
+    h1 span {
+        font-size: 14vh;
+    }
+}
+div {
+    position: absolute;
+    bottom: 0.5ex;
+    right: 1ex;
+    font-size: 4vw;
+}
+div a {
+    color: #3fb0ac;
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+div a:hover {
+    color: black;
+}
+div a:before {
+    content: "→ ";
+}
+@media (min-aspect-ratio: 2/1) {
+    div {
+        font-size: 8vh;
+    }
+}
