@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Titillium+Web:700i');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Titillium+Web:700i&subset=latin-ext');
 
 html {
     overflow: hidden;
@@ -22,7 +22,7 @@ h1 span {
     font-family: "Titillium Web", serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-variant: italic;
+    font-style: italic;
     font-size: 7vw;
     font-size: calc(min(7vw, 7hw));
     transform: rotate(-13deg);
